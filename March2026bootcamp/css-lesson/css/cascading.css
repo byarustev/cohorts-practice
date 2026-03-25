@@ -1,0 +1,20 @@
+#specificColor {
+    color: brown;
+}
+
+.color {
+    font-size: 30px;
+    color: blue;
+}
+
+.color1 {
+    color: aqua;
+}
+
+.color2 {
+    color: rgb(72, 7, 75);
+}
+
+.color3 {
+    color: rgb(37, 147, 37);
+}

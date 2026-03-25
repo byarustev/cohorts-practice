@@ -1,0 +1,29 @@
+/* Using the element as the selector */
+/* h1 - selector */
+h1 {
+    /* property: value */
+    color: red;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 30px;
+}
+
+
+/* using class and Id selectors */
+
+.text1 {
+    border: 1px solid green;
+    color: green;
+    text-decoration: underline;
+}
+
+.padded-element {
+    padding: 15px;
+}
+
+#par1 {
+    border: 1px solid rgb(192, 7, 253);
+    color: rgb(14, 18, 242);
+    text-decoration: underline;
+    padding: 15px;
+}
