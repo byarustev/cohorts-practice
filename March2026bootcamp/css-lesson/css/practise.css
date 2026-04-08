@@ -1,0 +1,39 @@
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid green;
+
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.about-info h1 span {
+    color: rgb(67, 67, 198);
+}
+
+.about-follow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.about-follow img {
+    width: 20px;
+    height: 20px;
+}
+
+.about-profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.shifted-shadow {
+    /* horizontal-offset | vertical-offset | blur-radius | spread-radius | color */
+    box-shadow: -6px 0 0 0 rgb(42, 42, 42);
+    padding: 10px;
+    /* add padding so the shadow doesn't overlap content */
+    /* Add other styles for your main content here */
+}
