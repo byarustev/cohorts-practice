@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Datatypes 
+        // primitive
+        //Number, String, Boolean, Null, undefined
+
+        const num = 900;
+        const name = "Stephen"
+        const isMale = true;
+        let personality; //unfined
+        let socialClass = null; //null
+
+        // non primitive datatypes
+        // Object - key, value pairs
+        const student = {
+            //key:value 
+            name: "Stephen",
+            age: 34,
+            isMale: true,
+            personality: "Social"
+        }
+        console.log(student)
+        // accessing object items
+        console.log(student.name)
+        console.log(student.age)
+
+        console.log(student["isMale"])
+        console.log(student["name"])
+
+        // array - list
+        const studentMarks = [78, 90, 100, 45, 67]
+
+        // items are accesed using indecies other than keys
+        // and indicies start from 0
+        console.log(studentMarks[0])
+        console.log(studentMarks[4])
+
+        //functions - reusable pieces of code
+
+        // function definition
+        function sayHello() {
+            console.log("Hello")
+        }
+
+        // invoke it using a function call
+        sayHello()
+
+        // function that adds two numbers
+        // (contains arguments and they are separated by commas)
+        function add(x, y) {
+            return x + y
+        }
+
+        const result1 = add(90, 100)
+        const result2 = add(89, 45)
+        const result3 = add(1888, 5666667)
+        console.log(result1)
+        console.log(result2)
+        console.log(result3)
+
+
+    </script>
+</body>
+
+</html>
