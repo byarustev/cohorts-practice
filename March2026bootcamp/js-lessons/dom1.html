@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="helloTxt">Hello World</h1>
+
+    <h1 class="selector">GeeksForGeeks</h1>
+    <h2 class="selector">DOM selector in JavaScript</h2>
+    <script>
+        // this will be a single item
+        const helloHeadingElmt = document.getElementById("helloTxt");
+        helloHeadingElmt.style.color = "yellow"
+        helloHeadingElmt.style.background = "blue"
+        helloHeadingElmt.innerHTML = "Hello world2"
+
+        // this will be an array
+        const ourSelectorHeadings = document.getElementsByClassName("selector")
+        ourSelectorHeadings[0].style.color = "green";
+        ourSelectorHeadings[1].style.color = "red";
+        ourSelectorHeadings[0].style.textAlign = "center";
+        ourSelectorHeadings[1].style.textAlign = "center";
+        ourSelectorHeadings[0].style.marginTop = "60px";
+        console.log(ourSelectorHeadings)
+
+        // Query selector and it returns the first item
+        const element =
+            document.querySelector('.selector');
+        element.style.color = "purple";
+        element.style.textAlign = "center";
+        element.style.margin = "30px";
+        element.style.fontSize = "30px";
+
+
+        const hello2 =
+            document.querySelector('#helloTxt');
+        hello2.innerHTML = "hello world 3"
+    </script>
+</body>
+
+
+</html>

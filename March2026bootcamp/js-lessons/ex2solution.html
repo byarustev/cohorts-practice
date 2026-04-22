@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const students = [
+            { name: "John", scores: [80, 75, 90, 87, 89] },
+            { name: "Mary", scores: [60, 70, 65, 189, 789] },
+            { name: "Peter", scores: [85, 90, 88, 89, 78] }
+        ];
+
+        function calculateTotalScore(scoreArray) {
+            //   non dynamic way
+            let total = 0;
+
+            for (let i = 0; i < scoreArray.length; i++) {
+                total = scoreArray[i] + total
+            }
+
+            return total
+        }
+
+        function calculateAverage(scoreArray) {
+            return calculateTotalScore(scoreArray) / scoreArray.length
+        }
+
+        let bestStudent; // we dont know the student
+
+        // loop
+        for (let i = 0; i < students.length; i++) {
+            const currentStudent = students[i]
+            const studentTotal = calculateTotalScore(currentStudent.scores)
+            const studentAverage = calculateAverage(currentStudent.scores)
+
+            debugger;
+            //   String literal is used to combine a string
+            const result = `${currentStudent.name} - Total: ${studentTotal}, Average: ${studentAverage}`
+
+            console.log(result)
+
+            // if we don't have any best student yet, take the current student
+            if (!bestStudent) {
+                bestStudent = {
+                    currentStudent,
+                    studentAverage
+                }
+            } else if (bestStudent && bestStudent?.studentAverage < studentAverage) {
+                // if we already have a best student, check if their average is less that then current student
+                bestStudent = {
+                    currentStudent,
+                    studentAverage
+                }
+            }
+
+            // are we at the last student
+            if (i === students.length - 1) {
+                const string = `Best student is ${bestStudent?.student?.name} with an average of ${bestStudent?.studentAverage}`
+                console.log(string)
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
