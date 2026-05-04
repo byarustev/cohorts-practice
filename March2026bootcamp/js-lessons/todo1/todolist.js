@@ -12,12 +12,19 @@ const button = document.getElementById("save");
 button.addEventListener("click", function () {
     const value = input.value
     if (value !== "") {
+        // add a new item to our object 
         dolist.push({ name: value, status: "pending" })
+        // re-display the changed list
         displayList()
     }
 
 })
 
+/***
+ * Function to iterate through the list and create li items to 
+ * be added to the ul - list 
+ * 
+ */
 function displayList() {
     const container = document.getElementsByClassName('List')[0];
     container.innerHTML = "" // reset the list
@@ -30,14 +37,13 @@ function displayList() {
         const button2 = document.createElement('button');
         container.appendChild(newItem);
 
-
         newItem.innerHTML = display;
         button1.innerHTML = "Edit";
         button2.innerHTML = "Delete";
         newItem.appendChild(button1);
         newItem.appendChild(button2);
         button2.addEventListener('click', function () {
-            newItem.remove() // remove 1 item at this given index
+            newItem.remove() // remove the current item from dom
         })
         newItem.style.justifyContent = "space-between";
 
