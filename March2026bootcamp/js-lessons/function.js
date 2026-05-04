@@ -36,4 +36,8 @@ function addTen(y) {
     return y + 10
 }
 
+
+const qube = (x) => (x)
+
+
 console.log(num(5, addTen))

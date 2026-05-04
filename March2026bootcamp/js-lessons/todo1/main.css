@@ -1,0 +1,47 @@
+body {
+    background-color: aqua;
+    /* justify-content: center; */
+}
+
+#todolist {
+    width: 300px;
+    height: auto;
+    background-color: black;
+    border-radius: 9px;
+    align-items: center;
+    margin: auto;
+    color: aliceblue;
+    box-shadow: 01 12 black;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    font-size: 16px;
+    border-radius: 20px;
+    color: blueviolet;
+    font-weight: 500;
+    padding: 4px;
+    border: none;
+    margin: 4px;
+    padding-left: 10px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 3px;
+    height: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+
+button:hover {
+    background-color: rgb(8, 247, 167);
+    color: rgb(221, 130, 18);
+    border: none;
+}
