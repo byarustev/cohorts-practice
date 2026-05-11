@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main container for the entire app -->
+    <div class="container">
+        <!-- Header section with app title -->
+        <header>
+            <h1>My Todo List</h1>
+            <p class="subtitle">Stay organized and get things done!</p>
+        </header>
+
+        <!-- Main app area -->
+        <main>
+            <!-- Input section for adding new todos -->
+            <section class="input-section">
+                <div class="input-container">
+                    <input type="text" id="todo-input" class="todo-input" placeholder="What needs to be done?"
+                        maxlength="100">
+                    <button id="add-btn" class="add-button">Add Task</button>
+                </div>
+            </section>
+
+            <!-- Filter section for viewing different todo states -->
+            <section class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </section>
+
+            <!-- Todo list display area -->
+            <section class="todo-section">
+                <div class="todo-stats">
+                    <span id="todo-count" class="count-display">0 tasks remaining</span>
+                </div>
+                <ul id="todo-list" class="todo-list">
+                    <!-- Todo items will be dynamically inserted here by JavaScript -->
+                </ul>
+                <div id="empty-message" class="empty-message">
+                    <p>✨ No tasks yet. Add one above to get started!</p>
+                </div>
+            </section>
+
+            <!-- Action buttons section -->
+            <section class="actions-section">
+                <button id="clear-completed-btn" class="action-button">Clear Completed</button>
+                <button id="clear-all-btn" class="action-button danger">Clear All</button>
+            </section>
+        </main>
+
+        <!-- Footer with additional information -->
+        <footer>
+            <p>Click on a task to mark it as complete</p>
+        </footer>
+    </div>
+
+    <!-- Link to JavaScript file - must be at the end so DOM is ready -->
+    <script src="script.js"></script>
+</body>
+
+</html>
