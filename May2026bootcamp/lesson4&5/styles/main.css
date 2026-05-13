@@ -1,0 +1,21 @@
+body {
+    color: brown;
+
+}
+
+h1 {
+    color: purple;
+    font-family: "Supermercado One", sans-serif;
+}
+
+p {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+div p {
+    border: 1px solid brown;
+    padding: 10px;
+    margin: 20px;
+}
