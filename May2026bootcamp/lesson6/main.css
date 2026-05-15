@@ -1,0 +1,34 @@
+.purple-text {
+    color: purple;
+}
+
+.blue-text {
+    color: rgb(21, 0, 255);
+}
+
+.border-underlined {
+    border: 1px dotted gray;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+#specificColor {
+    color: brown;
+}
+
+.color {
+    font-size: 30px;
+}
+
+.color1 {
+    color: aqua;
+}
+
+
+.color2 {
+    color: purple;
+}
+
+.color3 {
+    color: green;
+}
