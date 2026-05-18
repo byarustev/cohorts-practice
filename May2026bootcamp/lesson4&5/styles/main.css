@@ -14,8 +14,49 @@ p {
     font-style: normal;
 }
 
-div p {
+/* div p {
     border: 1px solid brown;
     padding: 10px;
     margin: 20px;
+} */
+
+
+/* Apply Flexbox to our semantic html page */
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.intro-pic {
+    border-radius: 50%;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
